@@ -1,0 +1,50 @@
+module.exports = [
+  "react/intro",
+  // {
+  //   type: "category",
+  //   label: "基础知识",
+  //   collapsed: false,
+  //   items: [
+  //     "react/base/basic-use",
+  //     "react/base/getting-started",
+  //     "react/base/hooks",
+  //   ],
+  // },
+  {
+    type: "category",
+    label: "React Router(v6)",
+    link: {
+      type: "generated-index",
+      title: "React Router(v6)中文文档",
+      description: "长期同步React Router v6的官方文档!",
+      slug: "/category/react-router-v6",
+    },
+    items: [
+      "react/react-router/installation",
+      "react/react-router/overview",
+      // "react/react-router/tutorial",
+      // "react/react-router/ssr",
+      // "react/react-router/faq",
+      // "react/react-router/api",
+    ],
+  },
+  // {
+  //   type: "category",
+  //   label: "zustand状态管理",
+  //   link: { type: "doc", id: "README" },
+  //   items: [
+  //     "react/zustand/README",
+  //     "react/zustand/3rd-Party-Libraries",
+  //     "react/zustand/Auto-Generating-Selectors",
+  //     "react/zustand/Difference-between-zustand-and-valtio",
+  //     "react/zustand/Flux-inspired-practice",
+  //     "react/zustand/Gotchas",
+  //     "react/zustand/Persisting-the-store's-data",
+  //     "react/zustand/Practice-with-no-store-actions",
+  //     "react/zustand/Splitting-the-store-into-separate-slices",
+  //     "react/zustand/Testing",
+  //     "react/zustand/Translation-ID",
+  //     "react/zustand/Updating-nested-state-object-values",
+  //   ],
+  // },
+];
