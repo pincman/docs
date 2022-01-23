@@ -114,7 +114,7 @@ function DeepComponent() {
 // Aaaaaaaaand we're done here.
 ```
 
-在 v6 中使用 `element` 属性的另一个重要原因是 `<Route children>` 在嵌套路由中是保留的。 你可以在 v6 的 [入门指南](/react-routerv6-cn/overview#嵌套路由) 中阅读更多相关信息。
+在 v6 中使用 `element` 属性的另一个重要原因是 `<Route children>` 在嵌套路由中是保留的。 你可以在 v6 的 [入门指南](./overview#嵌套路由) 中阅读更多相关信息。
 
 ## 如何在 react-router v6 中添加 No Match (404) 路由？
 

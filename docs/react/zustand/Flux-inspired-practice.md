@@ -20,4 +20,4 @@ const useStore = create((set) => ({
 - 仅使用`set`定义store
 - 在 store 的root级别定义 dispatch 函数来更新一个或多个 store切片
 
-请参阅[将store拆分为单独的切片](/docs/pmndrs/zustand-cn/wiki/splitting-the-store-into-separate-slices)以定义具有单独切片的store。
+请参阅[将store拆分为单独的切片](./splitting-the-store-into-separate-slices)以定义具有单独切片的store。

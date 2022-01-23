@@ -5,8 +5,8 @@ sidebar_position: 1
 
 如果你熟悉 JavaScript 生态系统、React 和 React Router，这可以作为 React Router v6 的快速概览，其中包含大量代码和最少的解释。
 
--   有关 React Router 的完整介绍，请参阅[教程](/docs/react-routerv6-cn/tutorial)
--   有关每个 API 的大量文档，请参阅[API 参考](/docs/react-routerv6-cn/api)
+-   有关 React Router 的完整介绍，请参阅[教程](./tutorial)
+-   有关每个 API 的大量文档，请参阅[API 参考](./api)
 -   要更深入地了解概念，请参阅[主要概念](https://reactrouter.com/docs/en/v6/getting-started/concepts)
 
 ## 安装
@@ -179,7 +179,7 @@ function App() {
 </App>
 ```
 
-注意，内部组件 (`<SentInvoices>`和`<Invoice>`)随 URL改变。确保子路由使用 [`<Outlet>`](../api.md#outlet)来渲染,这样父路由 ( `<Invoices>`) 才会响应. 这是完整的示例：
+注意，内部组件 (`<SentInvoices>`和`<Invoice>`)随 URL改变。确保子路由使用 [`<Outlet>`](./api.md#outlet)来渲染,这样父路由 ( `<Invoices>`) 才会响应. 这是完整的示例：
 
 ```tsx
 import { Routes, Route, Outlet } from "react-router-dom";
@@ -397,7 +397,7 @@ function App() {
 
 ## 更多的路由设置
 
-尽管你应该在应用中只拥有一个`<Router>`，但你可以在任何需要的地方拥有任意数量的[`Routes`](/docs/react-routerv6-cn/api#routes)。每个`<Routes>`元素独立于其他元素运行，并选择一个子路由进行渲染。
+尽管你应该在应用中只拥有一个`<Router>`，但你可以在任何需要的地方拥有任意数量的[`Routes`](./api#routes)。每个`<Routes>`元素独立于其他元素运行，并选择一个子路由进行渲染。
 
 ```tsx
 function App() {
@@ -458,4 +458,4 @@ function Dashboard() {
 }
 ```
 
-仅此而已！我们没有在这里涵盖所有 API，但这些绝对是你将使用的最常见的 API。如果你想了解更多信息，请继续阅读[我们的教程](/docs/react-routerv6-cn/tutorial)或浏览[完整的 API 参考](/docs/react-routerv6-cn/api)。
+仅此而已！我们没有在这里涵盖所有 API，但这些绝对是你将使用的最常见的 API。如果你想了解更多信息，请继续阅读[我们的教程](./tutorial)或浏览[完整的 API 参考](./api)。

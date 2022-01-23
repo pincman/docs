@@ -18,7 +18,7 @@ React Router 以三个不同的包发布到 npm：
 
 当安装`react-router-dom`或`react-router-native`时,会自动包含`react-router`作为依赖，并且它们都从`react-router`暴露所有接口。当你`import`它们的模块的时候，你应该总是从`react-router-dom`或`react-router-native`导入，绝对不要直接从`react-router`导入. 否则，你可能会意外地在你的应用中导入不匹配的库版本。
 
-如果你将React Router[安装](/docs/react-routerv6-cn/installation)为全局（使用`<script>`标签），你可以在`window.ReactRouterDOM`对象上找到它。如果你从 npm 安装它，你可以通过[`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)来导入需要的模块。本参考中的示例均使用`import`语法。
+如果你将React Router[安装](./installation)为全局（使用`<script>`标签），你可以在`window.ReactRouterDOM`对象上找到它。如果你从 npm 安装它，你可以通过[`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)来导入需要的模块。本参考中的示例均使用`import`语法。
 
 ### 设置
 

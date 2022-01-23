@@ -562,18 +562,18 @@ const useStore = create(
 
 ## 最佳实践
 
-* 你可能想知道如何组织你的代码以便更好地维护：[将store拆分为单独的切片](/docs/pmndrs/zustand-cn/wiki/splitting-the-store-into-separate-slices)。
-* 这个不受约束的库的推荐用法：[Flux的启发与实践](/docs/pmndrs/zustand-cn/wiki/flux-inspired-practice)。
+* 你可能想知道如何组织你的代码以便更好地维护：[将store拆分为单独的切片](./splitting-the-store-into-separate-slices)。
+* 这个不受约束的库的推荐用法：[Flux的启发与实践](./flux-inspired-practice)。
 
 
 ## 测试
 
-有关使用 Zustand 进行测试的信息，请访问这个[Wiki 页面](/docs/pmndrs/zustand-cn/wiki/testing)
+有关使用 Zustand 进行测试的信息，请访问这个[Wiki 页面](./testing)
 
 ## 第三方库
 
-一些用户可能想要扩展 Zustand 的功能集，这可以使用社区制作的 第三方方库来完成。有关 Zustand 的第三方库的信息，请访问专用的 [Wiki 页面](/docs/pmndrs/zustand-cn/wiki/3rd-party-libraries)
+一些用户可能想要扩展 Zustand 的功能集，这可以使用社区制作的 第三方方库来完成。有关 Zustand 的第三方库的信息，请访问专用的 [Wiki 页面](./3rd-party-libraries)
 
 ## 与其他库的比较
 
-- [zustand 和 valtio 的区别](/docs/pmndrs/zustand-cn/wiki/difference-between-zustand-and-valtio)
+- [zustand 和 valtio 的区别](./difference-between-zustand-and-valtio)
