@@ -1,0 +1,122 @@
+html,
+body {
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-font-size-base);
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+}
+a {
+  color: var(--ifm-link-color);
+  text-decoration: var(--ifm-link-decoration);
+  transition: color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+a {
+  transition: 0.3s;
+}
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(187, 172, 172, 0.932);
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb:horizontal:hover,
+*::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: rgba(230, 80, 80, 0.8);
+}
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+.markdown {
+  & > ul {
+    margin-top: 20px;
+    padding: 0 2rem;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.docs-doc-page {
+  & main {
+    padding: 1rem;
+    & > .container {
+      border-radius: 3px;
+      transition: all 0.2s ease;
+      box-shadow: 1px 1px 2px 1px rgb(183 183 208 / 35%);
+      &:hover {
+        box-shadow: 1px 1px 3px 2px rgb(183 183 208 / 35%);
+      }
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  .docs-doc-page {
+    & main {
+      background-color: var(--main-dark-bg-color);
+    }
+  }
+  .docusaurus-highlight-code-line {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgba(63, 61, 61, 0.8);
+  }
+
+  *::-webkit-scrollbar-track-piece {
+    background-color: rgba(20, 20, 20, 0.8);
+  }
+
+  /* *::-webkit-scrollbar-thumb:horizontal:hover,
+  *::-webkit-scrollbar-thumb:vertical:hover {
+    background: rgba(88, 86, 86, 0.8);
+  } */
+}
+
+.theme-doc-sidebar-item-link > .menu__link {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.admonition-heading {
+  display: none;
+}
+.admonition::before {
+  background: #38a3fd;
+  border-radius: 50%;
+  color: #fff;
+  content: "i";
+  font-family: Dosis, "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  height: 21px;
+  line-height: 21px;
+  margin-left: -32px;
+  margin-top: 5px;
+  position: absolute;
+  text-align: center;
+  width: 21px;
+}
+.alert {
+  color: inherit;
+  box-shadow: none;
+}
+.admonition.alert--warning::before {
+  background: #ff7800 !important;
+  content: "\0021" !important;
+}

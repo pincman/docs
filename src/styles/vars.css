@@ -1,0 +1,37 @@
+:root {
+  font-size: 100%;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --doc-sidebar-width: 220px !important;
+  --ifm-font-size-base: 0.875rem;
+  --ifm-font-family-base: "Source Sans Pro", "Hiragino Sans GB",
+    "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace;
+  --ifm-font-color-base: #777;
+  --ifm-link-color: #000;
+  --ifm-color-warning-contrast-background: #fcf2e9;
+  --ifm-alert-padding-vertical: 8px;
+  --ifm-alert-padding-horizontal: 20px;
+  --ifm-alert-border-radius: 0 5px 5px 0;
+  --ifm-alert-border-left-width: 3px;
+  --ifm-link-hover-decoration: none;
+  --ifm-link-hover-color: #7a8796;
+  --ifm-heading-color: rgb(78, 73, 73);
+  --doc-sidebar-hidden-width: 12px !important;
+  --sidebar-dark-bg-color: rgb(23, 23, 26);
+  --main-dark-bg-color: rgb(35, 35, 36);
+  /* --ifm-menu-link-sublist-icon: var(--sidebar-dark-bg-color); */
+}
+
+html[data-theme="dark"] {
+  --ifm-link-color: #fff;
+  --ifm-font-color-base: #c6cfd8;
+  --ifm-link-hover-color: #e9ecef;
+  --ifm-color-warning-contrast-background: rgba(0, 0, 0, 0.8);
+  --ifm-heading-color: rgb(241, 231, 231);
+}

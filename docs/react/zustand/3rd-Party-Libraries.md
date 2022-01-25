@@ -6,7 +6,11 @@ sidebar_label: 第三方库
 
 Zustand 为状态管理提供了必需要的东西，这对大多数项目都很有用；但是，一些用户希望扩展库的功能集。这可以使用社区创建的第三方库来完成。
 
-[scode type="yellow"]免责声明：这些库可能有错误、有限的维护或其他限制，并且不是 pmndrs 或 zustand 维护者正式推荐的。此列表旨在为希望扩展 zustand 功能集的人提供一个良好的起点。[/scode]
+:::caution
+
+免责声明：这些库可能有错误、有限的维护或其他限制，并且不是 pmndrs 或 zustand 维护者正式推荐的。此列表旨在为希望扩展 zustand 功能集的人提供一个良好的起点。
+
+:::
 
 - [auto-zustand-selectors-hook](https://github.com/Albert-Gao/auto-zustand-selectors-hook) - 支持的Typescript 自动生成store的 zustand hooks
 - [geschichte](https://github.com/BowlingX/geschichte) - 基于 zustand 和 immer 的hook来管理查询参数

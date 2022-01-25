@@ -1,7 +1,8 @@
 ---
-hide_title: true
 sidebar_position: 10
 sidebar_label: 测试
+hide_title: true
+hide_table_of_contents: true
 ---
 ## 在测试之间重置状态
 

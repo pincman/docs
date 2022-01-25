@@ -1,0 +1,91 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+/* You can override the default Infima variables here. */
+:root {
+  font-size: 62.5%;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --doc-sidebar-width: 220px !important;
+  --ifm-font-size-base: 1.4rem;
+  --ifm-font-family-base: Dosis, Open Sans, pingfang SC, helvetica neue, arial,
+    hiragino sans gb, microsoft yahei ui, microsoft yahei, simsun, sans-serif;
+  --ifm-font-color-base: #777;
+  --ifm-link-color: #000;
+  --ifm-color-warning-contrast-background: #fcf2e9;
+  --ifm-alert-padding-vertical: 8px;
+  --ifm-alert-padding-horizontal: 20px;
+  --ifm-alert-border-radius: 0 5px 5px 0;
+  --ifm-alert-border-left-width: 3px;
+  --ifm-link-hover-decoration: none;
+  --ifm-link-hover-color: #7a8796;
+}
+html,
+body {
+  font-size: var(--ifm-font-size-base);
+}
+a {
+  transition: 0.3s;
+}
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] {
+  --ifm-link-color: #fff;
+  --ifm-font-color-base: #c6cfd8;
+  --ifm-link-hover-color: #e9ecef;
+}
+.docs-doc-page {
+  & main {
+    background-color: #1f1f1f;
+  }
+}
+
+.theme-doc-sidebar-item-link > .menu__link {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.admonition-heading {
+  display: none;
+}
+.admonition::before {
+  background: #38a3fd;
+  border-radius: 50%;
+  color: #fff;
+  content: "i";
+  font-family: Dosis, "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  height: 21px;
+  line-height: 21px;
+  margin-left: -32px;
+  margin-top: 5px;
+  position: absolute;
+  text-align: center;
+  width: 21px;
+}
+.alert {
+  color: inherit;
+  box-shadow: none;
+}
+.admonition.alert--warning::before {
+  background: #ff7800 !important;
+  content: "\0021" !important;
+}

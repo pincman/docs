@@ -16,18 +16,40 @@
   },
   "dependencies": {
     "@algolia/client-search": "^4.12.0",
+    "@ant-design/icons": "^4.7.0",
     "@docusaurus/core": "2.0.0-beta.14",
     "@docusaurus/preset-classic": "2.0.0-beta.14",
+    "@docusaurus/theme-common": "^2.0.0-beta.14",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.14",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
+    "copy-text-to-clipboard": "^3.0.1",
+    "dnd-core": "^14.0.1",
+    "faker": "^5.5.3",
+    "immutability-helper": "^3.1.1",
+    "lodash-es": "^4.17.21",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dnd": "^14.0.5",
+    "react-dnd-html5-backend": "^14.1.0",
+    "react-dom": "^17.0.2",
+    "react-frame-component": "^5.2.1",
+    "react-tooltip": "^4.2.21"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.0.0-beta.14",
+    "@testing-library/react": "^12.1.2",
     "@tsconfig/docusaurus": "^1.0.4",
+    "@types/jest": "^27.4.0",
+    "@types/lodash-es": "^4.17.5",
     "@types/react": "^17.0.38",
+    "autoprefixer": "^10.4.2",
+    "install": "^0.13.0",
+    "jest": "^27.4.7",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "react-dnd-test-utils": "^14.1.0",
+    "tailwindcss": "^3.0.16",
     "typescript": "^4.5.5"
   },
   "browserslist": {
@@ -45,10 +67,13 @@
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "webpack"
+        "webpack",
+        "@types/node",
+        "prop-types"
       ],
       "allowedVersions": {
-        "react": "17"
+        "react": "17",
+        "react-dom": "17"
       }
     }
   }
