@@ -6,7 +6,7 @@ React DnD 新手？  在进入文档之前请[阅读概述](../quick-start/overv
 
 # 测试
 
-React DnD 是测试友好的。可以测试整个拖放交互，包括您的组件的渲染，以及您响应拖放事件执行的副作用。
+React DnD 是测试友好的。可以测试整个拖放交互，包括你的组件的渲染，以及你响应拖放事件执行的副作用。
 
 有几种不同的方法来测试 React 组件。 React DnD 没有固执己见，让你可以使用其中的任何一个。 **并非所有方法都要求浏览器事件系统可用。**
 
@@ -14,7 +14,7 @@ React DnD 的`examples`文件夹中包含了一些测试示例。在 `react-dnd`
 
 ### 隔离测试组件
 
-如果你只对单独测试组件的渲染感兴趣，而不是它们的交互，你可以使用 React DnD 包装的任何类上可用的 `Decorated Component` 静态属性来访问原始类。然后，您可以使用不同的 props 对其进行测试，而不依赖于 React DnD，提供一个标识函数来存根连接器方法。
+如果你只对单独测试组件的渲染感兴趣，而不是它们的交互，你可以使用 React DnD 包装的任何类上可用的 `Decorated Component` 静态属性来访问原始类。然后，你可以使用不同的 props 对其进行测试，而不依赖于 React DnD，提供一个标识函数来存根连接器方法。
 
 ```jsx
 import React from 'react'
@@ -53,13 +53,13 @@ it('can be tested independently', () => {
 
 This is currently the least documented part of React DnD because it exposes the underlying concepts from the [DnD Core](https://github.com/react-dnd/dnd-core), the library powering React DnD inside. You can learn more about the test backend and its methods from the [DnD Core tests](https://github.com/react-dnd/dnd-core/tree/v1.1.0/src/__tests__).
 
-首先，您需要安装测试后端：
+首先，你需要安装测试后端：
 
 ```
 npm install --save-dev react-dnd-test-backend
 ```
 
-以下是一些帮助您入门的示例：
+以下是一些帮助你入门的示例：
 
 ```jsx
 import React from 'react'
@@ -95,7 +95,7 @@ it('can be tested with the testing backend', () => {
 你可以在你的测试库中使用 [HTML 5 后端](../backends/HTML5) 或 [touch 后端](../backends/Touch.md)加上 [jsdom](https://github.com/jsdom/jsdom) 。许多测试库，例如 [Jest](https://jestjs.io/docs/en/configuration#testenvironment-string)，默认使用 jsdom。
 
 注意jsdom没有Drag Event或[Data Transfer](https://github.com/jsdom/jsdom/issues/1568)对象，拖拽和文件拖拽测试时会影响预览图。事件交互也不会操作与渲染有关的属性，如元素宽度或坐标。
-但是，您可以自己将这些值添加到您的事件对象属性中。
+但是，你可以自己将这些值添加到你的事件对象属性中。
 
 ### 库
 

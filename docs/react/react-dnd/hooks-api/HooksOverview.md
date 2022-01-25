@@ -12,10 +12,10 @@ React DnD 新手？  在进入文档之前请[阅读概述](../quick-start/overv
 
 提供了三个主要的钩子来将你的组件连接到 React DnD 中，并且提供了第四个钩子来让你接入React DnD 中（用于测试或开发目的）
 
-- [`useDrag`](./use-drag)
-- [`useDrop`](./use-drop)
-- [`useDragLayer`](./use-drag-layer)
-- [`useDragDropManager`](./use-drag-drop-manager) (_dev/test hook_)
+- [`useDrag`](../hooks-api/useDrag)
+- [`useDrop`](../hooks-api/useDrop)
+- [`useDragLayer`](../hooks-api/useDragLayer)
+- [`useDragDropManager`](../hooks-api/useDragDropManager) (_dev/test hook_)
 
 ## 基本示例
 

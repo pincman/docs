@@ -5,7 +5,7 @@ React DnD 新手？在进入文档之前请[阅读概述](../quick-start/overvie
 
 # DragSourceMonitor
 
-`Drag Source Monitor` 是传递给 [hooks-based](../hooks-api/useDrag.md)拖动源的collecting函数的对象。它的方法让您可以获取有关特定拖动源的拖动状态的信息。绑定到该监视器的特定拖动源在下面称为监视器的_所有者_。
+`Drag Source Monitor` 是传递给 [hooks-based](../hooks-api/useDrag.md)拖动源的collecting函数的对象。它的方法让你可以获取有关特定拖动源的拖动状态的信息。绑定到该监视器的特定拖动源在下面称为监视器的_所有者_。
 
 ### 方法列表
 

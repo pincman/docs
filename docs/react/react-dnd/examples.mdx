@@ -50,7 +50,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 ### 在 iframe 内
 
 这是同一个垃圾桶示例，但嵌套在 iframe 中。
-当您使用[react-dnd-html5-backend](./backends/HTML5) 后端时，您只能在单个 HTML 文档中拖放。
+当你使用[react-dnd-html5-backend](./backends/HTML5) 后端时，你只能在单个 HTML 文档中拖放。
 在 iframe 中使用 react-dnd 需要在 iframe 中使用[DndProvider](./common-components/DndProvider)。
 
 ```mdx-code-block
@@ -99,7 +99,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 
 当盒子被拖动时，我们通过返回移除它原来的 DOM 节点`render()` 中的 `null` 并让浏览器绘制
 拖动预览。当盒子被释放时，我们在新的坐标处绘制它。
-如果您尝试将框拖到容器外，浏览器将对它的返回值添加动画。
+如果你尝试将框拖到容器外，浏览器将对它的返回值添加动画。
 
 虽然这种方法适用于琐碎的情况，但它会在放置时闪烁。产生这
 种现象是因为浏览器在删除和拖动预览之前我们有一个机会去使已经处于拖动中的项目被显示。如果你把原来的项目变暗而不是直接隐藏它,那么这也许就不是一个问题了,否则它就变得清晰可见了。
@@ -138,7 +138,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 
 ### 拖动源
 
-您可以将拖动源相互嵌套。如果嵌套拖动源从 `canDrag` 返回 `false`，其父级将被询问，直到找到并激活可拖动的源。只有激活的拖动源才有的 `beginDrag()`和`endDrag()`被调用。
+你可以将拖动源相互嵌套。如果嵌套拖动源从 `canDrag` 返回 `false`，其父级将被询问，直到找到并激活可拖动的源。只有激活的拖动源才有的 `beginDrag()`和`endDrag()`被调用。
 
 ```mdx-code-block
 <CodeWindow minHeight={240} bodyPadding='1rem' codeDemo={{codesandbox: 'https://codesandbox.io/embed/github/react-dnd/react-dnd/tree/gh-pages/examples_hooks_ts/03-nesting/drag-sources?fontsize=14&hidenavigation=1&theme=dark'}}>
@@ -162,7 +162,7 @@ React DnD 的设计没有提供停止冒泡的方法。取而代之的是放置�
 
 ### 简单的
 
-React DnD 为您提供了能够创建可排序列表的工具。为此，请将同一个组件设置为拖动源和放置目标，然后在`hover` 处理器中重新排序数据。
+React DnD 为你提供了能够创建可排序列表的工具。为此，请将同一个组件设置为拖动源和放置目标，然后在`hover` 处理器中重新排序数据。
 
 ```mdx-code-block
 <CodeWindow minHeight={240} bodyPadding='1rem' codeDemo={{codesandbox: 'https://codesandbox.io/embed/github/react-dnd/react-dnd/tree/gh-pages/examples_hooks_ts/04-sortable/simple?fontsize=14&hidenavigation=1&theme=dark'}}>
@@ -172,7 +172,7 @@ React DnD 为您提供了能够创建可排序列表的工具。为此，请将�
 
 ### 取消外部放置
 
-因为你编写逻辑而不是使用现成的组件，所以您可以将行为调整为您的应用程序需要的行为。
+因为你编写逻辑而不是使用现成的组件，所以你可以将行为调整为你的应用程序需要的行为。
 
 在这个例子中，我们不是在放置目标的 `drop()` 处理程序中移动卡片，而是在拖动源的 `endDrag()` 处理器中移动卡片。这让我们可以检查 `monitor.didDrop()` 并在卡片被放到其容器之外时恢复拖动操作。
 
@@ -188,8 +188,8 @@ React DnD 可以同时处理多少个项目？一个列表中的有数千个项�
 
 幸运的是，React DnD 被设计成与任何虚拟 React 数据列表组件可以配合使用，因为它在 DOM 不保留任何状态。
 
-此示例不会自动滚动，但您可以在父放置目标中添加滚动，通过在它的`hover`处理器中比较`component.getBoundingClientRect()`与`monitor.getClientOffset()`。
-事实上，欢迎您将此功能贡献给这个例子！
+此示例不会自动滚动，但你可以在父放置目标中添加滚动，通过在它的`hover`处理器中比较`component.getBoundingClientRect()`与`monitor.getClientOffset()`。
+事实上，欢迎你将此功能贡献给这个例子！
 
 ```mdx-code-block
 <CodeWindow minHeight={240} bodyPadding='1rem' codeDemo={{codesandbox: 'https://codesandbox.io/embed/github/react-dnd/react-dnd/tree/gh-pages/examples_hooks_ts/04-sortable/stress-test?fontsize=14&hidenavigation=1&theme=dark'}}>
@@ -201,9 +201,9 @@ React DnD 可以同时处理多少个项目？一个列表中的有数千个项�
 
 ### 拖动手柄和预览
 
-React DnD 允许您选择可拖动节点，以及拖动组件的`render`函数中的预览节点。
+React DnD 允许你选择可拖动节点，以及拖动组件的`render`函数中的预览节点。
 
-加载[Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)实例后，您还可以使用以编程方式创建的 Image 实例。
+加载[Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)实例后，你还可以使用以编程方式创建的 Image 实例。
 
 ```mdx-code-block
 <CodeWindow minHeight={240} bodyPadding='1rem' codeDemo={{codesandbox: 'https://codesandbox.io/embed/github/react-dnd/react-dnd/tree/gh-pages/examples_hooks_ts/05-customize/handles-and-previews?fontsize=14&hidenavigation=1&theme=dark'}}>
@@ -213,7 +213,7 @@ React DnD 允许您选择可拖动节点，以及拖动组件的`render`函数�
 
 ### 放置效果
 
-某些浏览器允许您为可拖动项目指定“放置效果”。在兼容的浏览器中，当你第一个框拖到放置区域上时将看到一个“复制”图标。
+某些浏览器允许你为可拖动项目指定“放置效果”。在兼容的浏览器中，当你第一个框拖到放置区域上时将看到一个“复制”图标。
 
 ```mdx-code-block
 <CodeWindow minHeight={240} bodyPadding='1rem' codeDemo={{codesandbox: 'https://codesandbox.io/embed/github/react-dnd/react-dnd/tree/gh-pages/examples_hooks_ts/05-customize/drop-effects?fontsize=14&hidenavigation=1&theme=dark'}}>

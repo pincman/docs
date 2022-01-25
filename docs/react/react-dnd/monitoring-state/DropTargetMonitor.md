@@ -5,13 +5,13 @@ React DnD 新手？在进入文档之前请[阅读概述](../quick-start/overvie
 
 # DropTargetMonitor
 
-`Drop Target Monitor` 是传递给 [hooks-based](../hooks-api/useDrop) 的收集函数的对象。它的方法让您可以获取有关特定放置目标的拖动状态的信息。绑定到该监视器的特定放置目标在下面称为监视器的_所有者_。
+`Drop Target Monitor` 是传递给 [hooks-based](../hooks-api/useDrop) 的收集函数的对象。它的方法让你可以获取有关特定放置目标的拖动状态的信息。绑定到该监视器的特定放置目标在下面称为监视器的_所有者_。
 
 ### 方法列表
 
 - **`canDrop()`**：如果正在进行拖动操作，则返回`true`，并且所有者的`canDrop()`返回`true`或未定义。
 
-- **`isOver(options)`**：如果正在进行拖动操作，并且指针当前悬停在所有者上，则返回 `true`。您可以选择传递 `{ shallow: true }` 来严格检查是否 `_only_` 所有者被悬停，而不是嵌套目标。
+- **`isOver(options)`**：如果正在进行拖动操作，并且指针当前悬停在所有者上，则返回 `true`。你可以选择传递 `{ shallow: true }` 来严格检查是否 `_only_` 所有者被悬停，而不是嵌套目标。
 
 - **`getItemType()`**：返回一个字符串或一个符号，标识当前拖动项的类型。如果没有项目被拖动，则返回 `null`。
 

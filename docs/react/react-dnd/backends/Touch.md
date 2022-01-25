@@ -5,7 +5,7 @@ React DnD 新手？  在进入文档之前请[阅读概述](../quick-start/overv
 
 # 触控后端
 
-HTML5 后端不支持触控事件。所以它不适用于平板电脑和移动设备。您可以将 `react-dnd-touch-backend` 用于触控设备。
+HTML5 后端不支持触控事件。所以它不适用于平板电脑和移动设备。你可以将 `react-dnd-touch-backend` 用于触控设备。
 
 ### 安装
 
@@ -66,7 +66,7 @@ class YourApp {
 
 - **scrollAngleRanges**: (default: undefined)
 
-  指定应忽略拖动事件的角度范围（以度为单位）。当您希望允许用户沿特定方向滚动而不是拖动时，这很有用。度数顺时针移动，0/360 指向左侧。
+  指定应忽略拖动事件的角度范围（以度为单位）。当你希望允许用户沿特定方向滚动而不是拖动时，这很有用。度数顺时针移动，0/360 指向左侧。
 
   ```jsx
   // allow vertical scrolling

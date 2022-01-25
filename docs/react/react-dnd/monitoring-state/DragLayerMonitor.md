@@ -5,7 +5,7 @@ React DnD 新手？在进入文档之前请[阅读概述](../quick-start/overvie
 
 # DragLayerMonitor
 
-`Drag Layer Monitor` 是传递给 [hooks-based](../hooks-api/useDragLayer.md)拖动层的collecting函数的对象.它的方法让您获得有关全局拖动状态的信息。
+`Drag Layer Monitor` 是传递给 [hooks-based](../hooks-api/useDragLayer.md)拖动层的collecting函数的对象.它的方法让你获得有关全局拖动状态的信息。
 
 ### 方法列表
 

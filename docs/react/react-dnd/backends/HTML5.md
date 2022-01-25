@@ -19,7 +19,7 @@ npm install react-dnd-html5-backend
 
 - **`getEmptyImage()`**: 返回一个透明的空 [`图片`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)的函数。使用[DragSourceConnector](../hooks-api/useDrag.md)的 `connect.dragPreview()` 完全遮罩浏览器内容来绘制拖动预览。方便绘制[使用“拖动层”的自定义拖动层](../hooks-api/useDragLayer.md)。请注意，自定义拖动预览在 IE 中不起作用。
 
-- **`NativeTypes`**: 三个常量的枚举，`NativeTypes.FILE`, `NativeTypes.URL` 和`NativeTypes.TEXT`。您可以为这些类型注册[drop targets](../hooks-api/useDrop.md) 来处理原生文件、URL或常规页面文本的放置。
+- **`NativeTypes`**: 三个常量的枚举，`NativeTypes.FILE`, `NativeTypes.URL` 和`NativeTypes.TEXT`。你可以为这些类型注册[drop targets](../hooks-api/useDrop.md) 来处理原生文件、URL或常规页面文本的放置。
 
 ### 使用
 
@@ -36,11 +36,11 @@ export default function MyReactApp() {
 }
 ```
 
-当您在监视器上调用 `getItem()` 时，HTML5 后端会根据放置类型公开来自事件的各种数据：
+当你在监视器上调用 `getItem()` 时，HTML5 后端会根据放置类型公开来自事件的各种数据：
 
 - `NativeTypes.FILE`:
   - `getItem().files`, 文件数组
-  - `getItem().items`, 使用 `event.dataTransfer.items`（您可以在放置目录时使用它来列出文件）
+  - `getItem().items`, 使用 `event.dataTransfer.items`（你可以在放置目录时使用它来列出文件）
 - `NativeTypes.URL`:
   - `getItem().urls`, 放置了URLs的数组
 - `NativeTypes.TEXT`:

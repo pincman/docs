@@ -4,7 +4,7 @@ sidebar_position: 3
 React DnD 新手？  在进入文档之前请[阅读概述](../quick-start/overview)
 
 # 测试
-测试后端允许您在没有 DOM 的情况下测试组件的拖放交互。
+测试后端允许你在没有 DOM 的情况下测试组件的拖放交互。
 
 ### 安装
 
